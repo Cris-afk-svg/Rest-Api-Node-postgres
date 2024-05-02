@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-    host: 'https://rest-api-node-postgres.onrender.com/',
+    host: 'https://rest-api-node-postgres.onrender.com',
     user: 'postgres',
     password: '12345',
     database: 'firstapi',
