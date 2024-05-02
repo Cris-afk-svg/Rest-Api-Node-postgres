@@ -4,6 +4,7 @@ const { config } = require('dotenv')
 config();
 
 const pool = new Pool({
+<<<<<<< HEAD
    /* host: 'localhost',
     user: 'postgres',
     password: '12345',
@@ -11,6 +12,13 @@ const pool = new Pool({
     port: '5435'*/
     connectionString: process.env.DATABASE_URL,
     ssl: true
+=======
+    host: 'https://rest-api-node-postgres.onrender.com',
+    user: 'postgres',
+    password: '12345',
+    database: 'firstapi',
+    port: '5432'
+>>>>>>> f8a95b9d8710771029c907056adf41958c739596
 
 });
 const getUsers = async (req,res) =>{
