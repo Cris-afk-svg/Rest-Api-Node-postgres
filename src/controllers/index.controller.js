@@ -5,7 +5,7 @@ const pool = new Pool({
     user: 'postgres',
     password: '12345',
     database: 'firstapi',
-    port: '5435'
+    port: '5432'
 
 });
 const getUsers = async (req,res) =>{
