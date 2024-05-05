@@ -4,15 +4,14 @@ const { config } = require('dotenv')
 config();
 
 const pool = new Pool({
-   host: 'dpg-copqbmkf7o1s73e53n8g-a.oregon-postgres.render.com',
+    host: 'dpg-copqbmkf7o1s73e53n8g-a.oregon-postgres.render.com',
     user: 'cristian',
     password: 'P71ns5Htng2h0oUyL4gYqhYa0k1Th9mw',
-    database: 'firstapi',
+    database: 'firtapi',
     port: '5432',
-    ssl:{
-       rejectUnauthorized: false
-    }
+    ssl: true,
 });
+
 const getUsers = async (req,res) =>{
 
     const response = await pool.query('SELECT * FROM users');
