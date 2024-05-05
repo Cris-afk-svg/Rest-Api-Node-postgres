@@ -8,7 +8,7 @@ const pool = new Pool({
     user: 'cristian',
     password: 'P71ns5Htng2h0oUyL4gYqhYa0k1Th9mw',
     database: 'firstapi',
-    port: '5435'
+    port: '5432'
 });
 const getUsers = async (req,res) =>{
 
