@@ -4,13 +4,11 @@ const { config } = require('dotenv')
 config();
 
 const pool = new Pool({
-   /* host: 'localhost',
-    user: 'postgres',
-    password: '12345',
+   host: 'dpg-copqbmkf7o1s73e53n8g-a',
+    user: 'cristian',
+    password: 'P71ns5Htng2h0oUyL4gYqhYa0k1Th9mw',
     database: 'firstapi',
-    port: '5435'*/
-    connectionString: process.env.DATABASE_URL,
-    ssl: true
+    port: '5435'
 });
 const getUsers = async (req,res) =>{
 
